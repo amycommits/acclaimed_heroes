@@ -13,6 +13,11 @@ export default {
   }
 }
 </script>
+<style>
+  #app {
+    background-color: teal;
+  }
+</style>
 
 <style scoped>
 p {
