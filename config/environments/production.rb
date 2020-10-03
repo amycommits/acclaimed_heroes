@@ -103,4 +103,7 @@ Rails.application.configure do
   # config.active_record.database_selector = { delay: 2.seconds }
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
+
+  ACCLAIM_AUTH_TOKEN = process.env.ACCLAIM_AUTH_TOKEN
+  ACCLAIM_ORG_ID = process.env.ACCLAIM_ORG_ID
 end

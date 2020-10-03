@@ -46,4 +46,7 @@ Rails.application.configure do
 
   # Raises error for missing translations.
   # config.action_view.raise_on_missing_translations = true
+  #define local environment variables
+  ACCLAIM_AUTH_TOKEN = ENV['ACCLAIM_AUTH_TOKEN']
+  ACCLAIM_ORG_ID = ENV['ACCLAIM_ORG_ID']
 end
