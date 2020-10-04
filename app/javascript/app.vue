@@ -1,27 +1,25 @@
 <template>
   <div id="app">
-    <p>{{ message }}</p>
+    <top-nav />
+    <home />
   </div>
 </template>
 
 <script>
+import TopNav from './components/static/TopNav.vue'
+import Home from './pages/home.vue'
 export default {
   data: function () {
     return {
       message: "Hello Vue!"
     }
+  },
+  components: {
+    Home,
+    TopNav
   }
 }
 </script>
-<style>
-  #app {
-    background-color: teal;
-  }
-</style>
-
-<style scoped>
-p {
-  font-size: 2em;
-  text-align: center;
-}
+<style lang="sass">
+  $primary: black;
 </style>
