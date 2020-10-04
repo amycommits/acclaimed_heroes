@@ -5,7 +5,7 @@ User.delete_all
 Badge.delete_all
 
 
-fetch_users = JSON.parse(HTTP.get('https://randomuser.me/api/?results=2').body)['results']
+fetch_users = JSON.parse(HTTP.get('https://randomuser.me/api/?results=50').body)['results']
 # this particular API will either allow you to make multiple requests, or search for gender
 users = fetch_users.map {|user| {
   email: user['email'],
