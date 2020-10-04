@@ -10,10 +10,11 @@ import App from '../app.vue'
 import BootstrapVue from 'bootstrap-vue'
 
 Vue.use(BootstrapVue)
-
+import store from '../store'
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
-    render: h => h(App)
+    render: h => h(App),
+    store
   }).$mount()
   document.body.appendChild(app.$el)
 
