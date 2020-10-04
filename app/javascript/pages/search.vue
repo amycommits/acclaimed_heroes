@@ -7,7 +7,7 @@
           :firstName="user.first_name"
           :lastName="user.last_name"
           :image="user.profile_picture"
-          :skills="user.skills"
+          :skills="user.skill_set"
           :rawInfo="user"
         />
       </div>
