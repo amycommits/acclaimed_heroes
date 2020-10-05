@@ -27,7 +27,7 @@
     height: 80vh;
     min-width: 100vw;
     object-fit: fill !important;
-    opacity: 80%;
+    opacity: 80% !important;
     z-index: 1;
   }
 
