@@ -46,3 +46,5 @@ takes you to a list of users
 
 takes you to a page where you can issue one badge to a user at a time.
 
+# verifies whether the email has been used or not
+    # badge_templates = JSON.parse(HTTP.headers(:accept => 'application/json', "content-type" => 'application/json').auth("Basic #{ACCLAIM_AUTH_TOKEN}").get("https://sandbox-api.youracclaim.com/v1/organizations/#{ACCLAIM_ORG_ID}/badges.json?filter=query::#{email}"))
