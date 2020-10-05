@@ -3,7 +3,7 @@
     <div class="row top-section">
       <div class="col-12 panel-1">
         <h2 class="centered">The world needs a HERO</h2>
-        <img class="panel-1-image row" :src="BackgroundCircuit" />
+        <img class="panel-1-image row" src="https://images.unsplash.com/photo-1562408590-e32931084e23" />
       </div>
     </div>
     <div class="row section-2">
