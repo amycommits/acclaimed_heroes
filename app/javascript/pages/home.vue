@@ -3,7 +3,7 @@
     <div class="row top-section">
       <div class="col-12 panel-1">
         <h2 class="centered">The world needs a HERO</h2>
-        <img class="panel-1-image row" src="https://images.unsplash.com/photo-1562408590-e32931084e23" />
+        <img class="panel-1-image row" :src="BackgroundCircuit" />
       </div>
     </div>
     <div class="row section-2">
@@ -41,6 +41,7 @@
   transform: translate(-50%, -50%);
   opacity: 100% !important;
   color: white;
+  text-shadow: 2px 2px black;
   z-index: 2;
 }
 </style>
