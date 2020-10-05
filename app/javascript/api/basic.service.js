@@ -7,5 +7,9 @@ export default {
   issueBadge(info, token) {
     axios.defaults.headers.common['X-CSRF-TOKEN'] = token
     return axios.post('/issue_badge', info)
+  },
+  issueBatchBadges(info, token) {
+    axios.defaults.headers.common['X-CSRF-TOKEN'] = token
+    return axios.post('/batch_badges', info)
   }
 }

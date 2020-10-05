@@ -11,7 +11,7 @@
           </div>
       </div>
       <div class="col-6">
-          <b-button class="col-4">
+          <b-button class="col-4" @click="issueBatchBadges">
             Approve All
           </b-button>
         <a href="#" class="col-4">Tired of approving these manually? Setup automatic approvals </a>
@@ -33,8 +33,12 @@
     },
     methods: {
       issueSingleBadge() {
-            const token = document.querySelector('[name=csrf-token]').content
+        const token = document.querySelector('[name=csrf-token]').content
         this.$store.dispatch('org/issueBadge', {email: this.email, token})
+      },
+      issueBatchBadges() {
+        const token = document.querySelector('[name=csrf-token]').content
+        this.$store.dispatch('org/issueBatchBadges', {emails: this.emailList, token})
       }
     },
     mounted() {
