@@ -27,7 +27,6 @@
     height: 80vh;
     min-width: 100vw;
     object-fit: fill !important;
-    opacity: 80% !important;
     z-index: 1;
   }
 
@@ -39,7 +38,6 @@
   top: 35vh;
   left: 50vw;
   transform: translate(-50%, -50%);
-  opacity: 100% !important;
   color: white;
   text-shadow: 2px 2px black;
   z-index: 2;
